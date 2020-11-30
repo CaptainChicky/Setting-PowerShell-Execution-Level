@@ -1,5 +1,7 @@
 # Disclaimer
 this is a useless project i spent 2-3 hours making when i was first learning powershell
+Made by Captain Chicky 2020
+***;-; please at least credit me on this on something when sharing this i spent 2 hours creating this useless script ;-;***
 
 # What this is
 This sets the execution policy of PowerShell, which basically means it tells powershell what level of security it should have
@@ -23,6 +25,3 @@ be signed in the future lol but probs not tbh) in the future to change the execu
 
 PLEASE DO NOTE that if you ever set the policy back to Restricted(or perhaps AllSigned), then you would have to use the batch script,
 or manally change the execution policy via PowerShell with administrator privelleges again.
-
-Made by Captain Chicky 2020
-;-; please at least credit me on this on something i spent 2 hours creating this useless script ;-;
