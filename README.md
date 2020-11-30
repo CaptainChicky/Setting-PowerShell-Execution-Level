@@ -1,6 +1,10 @@
 # Disclaimer
 this is a useless project i spent 2-3 hours making when i was first learning powershell
 
+# What this is
+This sets the execution policy of PowerShell, which basically means it tells powershell what level of security it should have
+regarding the ps1 scripts(and possibly other extensions like .psc1 etc) that it is told to run.
+
 # Overview-short
 tl;dr Before starting to use my script, either click on the batch file, or open admin PS and type in "Set-ExecutionPolicy RemoteSigned". Close powershell. Now you can use the script.
 
