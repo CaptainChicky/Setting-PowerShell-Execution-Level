@@ -1,5 +1,5 @@
 # Disclaimer
-an useless project i spent 2-3 hours making when i was first learning powershell
+this is a useless project i spent 2-3 hours making when i was first learning powershell
 
 # Overview-short
 tl;dr Before starting to use my script, either click on the batch file, or open admin PS and type in "Set-ExecutionPolicy RemoteSigned". Close powershell. Now you can use the script.
