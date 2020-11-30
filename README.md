@@ -5,8 +5,6 @@ tl;dr Before starting to use my script, either click on the batch file, or open 
 Close powershell. Now you can use the script.
 =======================================================================================================
 
-=======================================================================================================
-
 PowerShell by default will have the execution policy set to: Restricted. This means that my .ps1 scripts will *not* run. 
 So in order to start, you have two options, depending on your paranoia level:
 
