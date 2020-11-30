@@ -1,7 +1,7 @@
 # Disclaimer
 this is a useless project i spent 2-3 hours making when i was first learning powershell
 Made by Captain Chicky 2020
-***;-; please at least credit me on this on something when sharing this i spent 2 hours creating this useless script ;-;***
+***;-; please at least credit me on this or something when sharing this i spent 2 hours creating this useless script ;-;***
 
 # What this is
 This sets the execution policy of PowerShell, which basically means it tells powershell what level of security it should have
