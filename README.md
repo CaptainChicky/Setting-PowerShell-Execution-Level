@@ -4,6 +4,7 @@ an useless project i spent 2-3 hours making when i was first learning powershell
 tl;dr Before starting to use my script, either click on the batch file, or open admin PS and type in "Set-ExecutionPolicy RemoteSigned". 
 Close powershell. Now you can use the script.
 =======================================================================================================
+
 =======================================================================================================
 
 PowerShell by default will have the execution policy set to: Restricted. This means that my .ps1 scripts will *not* run. 
