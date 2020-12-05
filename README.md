@@ -1,5 +1,5 @@
 # Disclaimer!
-<sub>🤡🤡🤡 at the top instead of the end since this is less important than the malware disclaimers 🤡🤡🤡<sub>
+<sub>🤡🤡🤡 disclaimer at the top this time instead of the end since this time it's less important than the malware disclaimers 🤡🤡🤡<sub>
   
 I spent 2-3 hours making when I was first learning powershell 🙄. Yes, this is useless, I know 😑. 
   
