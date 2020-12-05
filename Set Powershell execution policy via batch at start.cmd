@@ -1,6 +1,6 @@
 @echo off
 title Set the PowerShell Execution Policy
-color 0c
+color 0e
 mode 1000
 cls
 goto Pre
@@ -76,26 +76,21 @@ echo AllSigned = AS
 echo RemoteSigned = RS (recommended)
 echo Unrestricted = UR
 echo Bypass = BY (not recommended)
-set /p "choice=Your choice?..."
-if /i "%choice%" == "RT" (
+SET /P "choice=Your choice?..."
+IF /I "%choice%" == "RT" (
     goto RT
-) 
-else if /i "%choice%" == "AS" (
+) else IF /I "%choice%" == "AS" (
     goto AS
-) 
-else if /i "%choice%" == "RS" (
+) else IF /I "%choice%" == "RS" (
     goto RS
-) 
-else if /i "%choice%" == "UR" (
-	goto UR
-) 
-else if /i "%choice%" == "BY" (
-	goto BY
-) 
-else (
-	echo "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter).
-	pause
-	cls
+) else IF /I "%choice%" == "UR" (
+    goto UR
+) else IF /I "%choice%" == "BY" (
+    goto BY
+) else (
+    ECHO "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter).
+	PAUSE
+	CLS
 	goto Start
 )
 
