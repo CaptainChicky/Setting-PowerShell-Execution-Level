@@ -15,11 +15,11 @@ goto Start
 :Start
 echo Which execution level do you want to set on PowerShell?
 echo Choose one of the following:
-echo Restricted --> RT
-echo AllSigned --> AS
-echo RemoteSigned --> RS (recommended)
-echo Unrestricted --> UR
-echo Bypass --> BY (not recommended)
+echo Restricted = 'RT'
+echo AllSigned = 'AS'
+echo RemoteSigned = 'RS' (recommended)
+echo Unrestricted = 'UR'
+echo Bypass = 'BY' (not recommended)
 set choice=
 set /p choice=You choice?: 
 if NOT '%choice%'=='' set choice=%choice:~0,1%
