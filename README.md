@@ -20,8 +20,12 @@ Before starting to use my script, either click on the batch file, or open admini
 PowerShell by default will have the execution policy set to: Restricted. This means that my .ps1 scripts will ****not**** run. 
 So in order to start, you have two options, depending on your paranoia level:
 
-  1) """""Unsafe""""" *cough* *cough* option: Click on the batch script I have provided, follow the instructions given.
+  1) """""Unsafe""""" *cough* *cough* option: 
+  
+  Click on the batch script I have provided, follow the instructions given.
 
-  2) """""Safe""""" *cough* *cough* option: First run PowerShell as administrator, and type in "Set-ExecutionPolicy RemoteSigned". When prompted, type "Y". This should have set your execution policy to RemoteSigned, but just to be safe, type in "Get-ExecutionPolicy" to check. Once you have verified that you have set the execution policy to RemoteSigned, you can then run my script(which hopefully will be signed in the future lol, so it can be ran with the more secure AllSigned execution level, but probably not tbh) in the future to change the execution policy to anything you want easily.
+  2) """""Safe""""" *cough* *cough* option: 
+  
+  First run PowerShell as administrator, and type in "Set-ExecutionPolicy RemoteSigned". When prompted, type "Y". This should have set your execution policy to RemoteSigned, but just to be safe, type in "Get-ExecutionPolicy" to check. Once you have verified that you have set the execution policy to RemoteSigned, you can then run my script(which hopefully will be signed in the future lol, so it can be ran with the more secure AllSigned execution level, but probably not tbh) in the future to change the execution policy to anything you want easily.
 
 **PLEASE DO NOTE** that if you ever set the policy back to Restricted(or perhaps AllSigned), then you would have to use the batch script, or manally change the execution policy via PowerShell with administrator privelleges again.
