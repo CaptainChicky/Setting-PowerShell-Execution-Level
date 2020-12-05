@@ -76,19 +76,19 @@ echo AllSigned    --^> AS
 echo RemoteSigned --^> RS (recommended^)
 echo Unrestricted --^> UR
 echo Bypass       --^> BY (not recommended^)
-SET /P "choice=Your choice?..."
-IF /I "%choice%" == "RT" (
+set /P "choice=Your choice?..."
+if /I "%choice%" == "RT" (
     goto RT
-) else IF /I "%choice%" == "AS" (
+) else if /I "%choice%" == "AS" (
     goto AS
-) else IF /I "%choice%" == "RS" (
+) else if /I "%choice%" == "RS" (
     goto RS
-) else IF /I "%choice%" == "UR" (
+) else if /I "%choice%" == "UR" (
     goto UR
-) else IF /I "%choice%" == "BY" (
+) else if /I "%choice%" == "BY" (
     goto BY
 ) else (
-    ECHO "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter^).
+    echo "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter^).
 	pause
 	cls
 	goto Start
@@ -98,7 +98,7 @@ IF /I "%choice%" == "RT" (
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Restricted -Force}"
 echo Success, PowerShell Execution Policy set to
 powershell -command "& {Get-ExecutionPolicy}"
-echo cmd will now close in 10 seconds.
+echo Command prompt will now close in 10 seconds.
 timeout 10
 exit
 
@@ -106,7 +106,7 @@ exit
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy AllSigned -Force}"
 echo Success, PowerShell Execution Policy set to
 powershell -command "& {Get-ExecutionPolicy}"
-echo cmd will now close in 10 seconds.
+echo Command prompt will now close in 10 seconds.
 timeout 10
 exit
 
@@ -114,7 +114,7 @@ exit
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force}"
 echo Success, PowerShell Execution Policy set to
 powershell -command "& {Get-ExecutionPolicy}"
-echo cmd will now close in 10 seconds.
+echo Command prompt will now close in 10 seconds.
 timeout 10
 exit
 
@@ -122,7 +122,7 @@ exit
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 echo Success, PowerShell Execution Policy set to
 powershell -command "& {Get-ExecutionPolicy}"
-echo cmd will now close in 10 seconds.
+echo Command prompt will now close in 10 seconds.
 timeout 10
 exit
 
@@ -130,6 +130,6 @@ exit
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Bypass -Force}"
 echo Success, PowerShell Execution Policy set to
 powershell -command "& {Get-ExecutionPolicy}"
-echo cmd will now close in 10 seconds.
+echo Command prompt will now close in 10 seconds.
 timeout 10
 exit
