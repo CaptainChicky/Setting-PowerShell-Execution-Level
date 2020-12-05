@@ -71,11 +71,11 @@ goto Start
 :Start
 echo Which execution level do you want to set on PowerShell?
 echo Choose one of the following:
-echo Restricted = RT
-echo AllSigned = AS
-echo RemoteSigned = RS (recommended)
-echo Unrestricted = UR
-echo Bypass = BY (not recommended)
+echo Restricted   --^> RT
+echo AllSigned    --^> AS
+echo RemoteSigned --^> RS (recommended^)
+echo Unrestricted --^> UR
+echo Bypass       --^> BY (not recommended^)
 SET /P "choice=Your choice?..."
 IF /I "%choice%" == "RT" (
     goto RT
@@ -88,9 +88,9 @@ IF /I "%choice%" == "RT" (
 ) else IF /I "%choice%" == "BY" (
     goto BY
 ) else (
-    ECHO "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter).
-	PAUSE
-	CLS
+    ECHO "%choice%" is not a valid choice. Please type one of the given two letter shorthands for the execution level(capitalization doesn't matter^).
+	pause
+	cls
 	goto Start
 )
 
