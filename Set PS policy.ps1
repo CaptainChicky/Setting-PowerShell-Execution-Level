@@ -7,7 +7,7 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     }
 }
 
-# SET BIGGER FONT (Method 2 from above)
+# Set bigger font
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
@@ -69,7 +69,12 @@ $policies = @{
 
 if ($UserInput -eq 'Q') {
     Write-Host "`nExiting..." -ForegroundColor Yellow
-    Start-Sleep -Seconds 2
+    for ($i = 2; $i -gt 0; $i--) {
+        $bar = "OOOOO" * $i + "-----" * (2 - $i)
+        Write-Host ("`r[$bar] $i seconds...".PadRight(50)) -NoNewline -ForegroundColor Yellow
+        Start-Sleep -Seconds 1
+    }
+    Write-Host ""
     exit
 }
 
@@ -83,15 +88,30 @@ if ($policies.ContainsKey($UserInput)) {
         Write-Host "Current policy: $(Get-ExecutionPolicy)" -ForegroundColor Cyan
         Write-Host ("=" * 50) -ForegroundColor Green
         Write-Host "`nClosing in 10 seconds..." -ForegroundColor Yellow
-        Start-Sleep -Seconds 10
+        for ($i = 10; $i -gt 0; $i--) {
+            $bar = "O" * $i + "-" * (10 - $i)
+            Write-Host ("`r[$bar] $i seconds...".PadRight(50)) -NoNewline -ForegroundColor Yellow
+            Start-Sleep -Seconds 1
+        }
+        Write-Host ""
     }
     catch {
         Write-Host "`nERROR: Failed to set execution policy" -ForegroundColor Red
         Write-Host $_.Exception.Message -ForegroundColor Red
-        Start-Sleep -Seconds 5
+        for ($i = 5; $i -gt 0; $i--) {
+            $bar = "OO" * $i + "--" * (5 - $i)
+            Write-Host ("`r[$bar] $i seconds...".PadRight(50)) -NoNewline -ForegroundColor Red
+            Start-Sleep -Seconds 1
+        }
+        Write-Host ""
     }
 }
 else {
     Write-Host "`nInvalid choice. Exiting..." -ForegroundColor Red
-    Start-Sleep -Seconds 3
+    for ($i = 5; $i -gt 0; $i--) {
+        $bar = "OO" * $i + "--" * (5 - $i)
+        Write-Host ("`r[$bar] $i seconds...".PadRight(50)) -NoNewline -ForegroundColor Red
+        Start-Sleep -Seconds 1
+    }
+    Write-Host ""
 }
